@@ -1,6 +1,6 @@
 {
-    "identifier": "rb.gd.TricoloreTheme",
-    "name": "Tricolore Theme",
+    "identifier": "rb.gd.Tricolore",
+    "name": "Tricolore",
     "vendor": "Randall Bruder",
     "description": "A Nova adaptation of Alex Gordon's adaption of Chris Thomas' Tricolore theme.",
     "version": "0.0.1",
