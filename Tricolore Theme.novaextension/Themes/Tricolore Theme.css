@@ -1,0 +1,308 @@
+meta {
+	-theme-interface-style: light;
+	-theme-vibrancy: vibrant;
+	-theme-accent-color: auto;
+}
+
+/*
+* Window styles
+*/
+meta.window {
+	background-color: rgba(255, 255, 255, 1);
+	border-color: hsba(0, 0%, 100%, 0.1);
+}
+meta.titlebar {
+	color: #b8c2cc;
+	background: linear-gradient(#3c3f42, #2e3033);
+	border-color: hsba(0, 0%, 0%, 0.6);
+}
+meta.titlebar.inactive {
+	background-color: #2e3033;
+}
+
+meta.button {
+	background: linear-gradient(#4e5257, #3c3f42);
+	border: linear-gradient(#292c2e, #202224);
+	color: white;
+}
+meta.button.highlighted {
+	background: linear-gradient(#656b70, #53575c);
+	color: rgba(255, 255, 255, 1);
+}
+meta.button.selected {
+	color: rgba(255, 255, 255, 1);
+}
+meta.button.highlighted.selected {
+	color: rgba(255, 255, 255, 1);
+}
+meta.button.disabled {
+	background: linear-gradient(#4e5257, #3c3f42);
+	border: linear-gradient(#292c2e, #202224);
+	color: #666666;
+}
+
+meta.textfield {
+	background-color: #202224;
+	border-color: #171819;
+}
+
+meta.accent {
+	color: #36aaf7;
+}
+
+/*
+* Document styles
+*/
+meta.document {
+	background-color: rgba(255, 255, 255, 1);
+	border-color: rgba(189, 189, 189, 1);
+}
+
+meta.document.button {
+	background: linear-gradient(rgba(252, 252, 252, 1), rgba(242, 242, 242, 1));
+	border: linear-gradient(rgba(200, 200, 200, 1), rgba(164, 164, 164, 1));
+	color: rgba(69, 69, 69, 1);
+}
+meta.document.button.disabled {
+	background: linear-gradient(hsba(220, 10%, 26%, 0.3), hsba(220, 10%, 22%, 0.3));
+}
+meta.document.button.highlighted {
+	background: linear-gradient(#53575c, #494e52);
+}
+
+meta.document.textfield {
+	background-color: rgba(255, 255, 255, 1);
+	border-color: rgba(160, 160, 160, 1);
+}
+
+/* Text */
+meta.text {
+	color: rgba(0, 0, 0, 1);
+}
+meta.text.invisible {
+	color: rgba(0, 0, 0, 0.1);
+}
+meta.text.selected {
+}
+
+/* Cursor */
+meta.cursor {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+/* Indentation Guides */
+meta.indentguide {
+	border-color: hsba(220, 10%, 50%, 0.2);
+}
+
+/* Gutter */
+meta.gutter {
+	color: rgba(173, 173, 173, 1);
+	background-color: rgb(251, 251, 251); /* Does nothing */
+}
+meta.gutter.selected {
+	/* background-color: #171819; */
+	color: rgba(93, 93, 93, 1);
+	font-weight: bold;
+}
+
+
+/*
+* Syntax styles
+*/
+
+keyword {
+	color: rgba(0, 0, 162, 1);
+	font-weight: bold;
+}
+comment {
+	color: rgba(127, 127, 127, 1);
+	font-style: italic;
+}
+processing {
+	color: #292e33;
+}
+declaration {
+	color: rgba(154, 154, 154, 1);
+	font-weight: bold;
+}
+bracket {
+	/* color: #6a7785; */
+}
+operator {
+	/* color: #6a7785; */
+}
+invalid {
+	background-color: #f52c3d;
+	color: #f7f7f0;
+}
+link {
+	color: #66b3ff;
+	
+}
+
+/* Values */
+value.boolean {
+	color: rgba(69, 147, 155, 1);
+	font-weight: bold;
+}
+value.null {
+	color: rgba(69, 147, 155, 1);
+	font-weight: bold;
+}
+value.number {
+	color: rgba(69, 147, 155, 1);
+}
+value.entity {
+	color: rgba(98, 135, 189, 1);
+	font-weight: bold;
+}
+value.symbol {
+	color: #66b3ff;
+}
+
+/* Identifiers */
+identifier.type {
+	color: #a085de;
+}
+identifier.constant {
+}
+identifier.global, identifier.variable {
+	color: rgba(63, 134, 64, 1);
+}
+identifier.property,
+identifier.decorator,
+identifier.function,
+identifier.method {
+	color: rgba(89, 39, 59, 1);
+	font-weight: bold;
+}
+identifier.key {
+	color: #66b3ff;
+}
+identifier.argument {
+	font-style: italic;
+}
+
+/* Strings */
+string {
+	color: rgba(142, 0, 35, 1);
+}
+string.key {
+	/* color: #ff6759; */
+	color: rgba(142, 0, 35, 1);
+}
+string-template {
+	color: #ffab66;
+}
+string-template.value {
+	color: #ff9a47;
+}
+regex {
+	color: #ffc247;
+}
+regex.escaped {
+	color: #fc9847;
+}
+cdata {
+	color: #66b3ff;
+}
+
+/* Markup */
+markup.heading {
+	color: rgba(0, 0, 162, 1);
+	font-weight: bold;
+}
+markup.line {
+	
+}
+markup.bold {
+	font-weight: bold;
+}
+markup.italic {
+	font-style: italic;
+}
+markup.strikethrough {
+	text-decoration: strike-through;
+}
+markup.list,
+markup.list.item {
+	color: rgba(68, 146, 154, 1);
+}
+markup.code {
+	background-color: rgba(128, 128, 128, 0.1);
+}
+markup.link {
+	color: rgba(197, 6, 11, 1);
+	color: rgba(142, 0, 35, 1);
+}
+
+/* Types */
+definition.class class.name,
+definition.type type.name,
+definition.package package.name,
+definition.enum enum.name,
+definition.union union.name,
+definition.struct struct.name {
+	font-weight: bold;
+	color: #a085de;
+}
+
+/* Members */
+definition.property property.name,
+definition.function function.name,
+definition.method method.name {
+	color: #e5f2ff;
+}
+
+/* Tags */
+tag {
+	color: rgba(0, 0, 162, 1);
+	font-weight: bold;
+}
+tag.framework {
+	/* color: #a085de; */
+	color: rgba(0, 0, 0, 1);
+	font-weight: normal;
+	background-color: rgba(0, 0, 0, 0.04);
+}
+tag.attribute.name {
+	color: rgba(0, 0, 162, 1);
+	font-style: italic;
+	font-weight: 400;
+}
+tag.attribute.value,
+tag.attribute.value.link { /* Needs fixing, not working with Nova 1.0b7 */
+	color: rgba(149, 38, 50, 1);
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* Styles */
+style.at {
+	color: rgba(77, 23, 45, 1);
+	font-weight: bold;
+}
+style.selector.element {
+	font-weight: bold;
+}
+style.selector.identifier.id,
+style.selector.identifier.class,
+style.selector.pseudoclass,
+style.selector.pseudoelement {
+	font-style: italic;
+}
+style.attribute.name {
+	color: rgba(123, 91, 185, 1);
+	font-weight: bold;
+}
+style.value.number,
+style.value.color.hex {
+	color: rgba(71, 114, 180, 1);
+	font-weight: bold;
+}
+style.value.keyword,
+style.value.color.named {
+	color: color: rgba(197, 6, 11, 1);
+	font-weight: bold;
+}
