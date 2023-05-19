@@ -3,7 +3,7 @@
     "name": "Tricolore",
     "vendor": "Randall Bruder",
     "description": "A Nova adaptation of Alex Gordon's adaption of Chris Thomas' Tricolore theme.",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "categories": ["themes"],
 	"repository": "https://github.com/randallbruder/nova-tricolore",
 	"license": "MIT",

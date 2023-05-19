@@ -117,6 +117,7 @@ keyword {
 }
 comment {
 	color: rgba(127, 127, 127, 1);
+	font-weight: normal;
 	font-style: italic;
 }
 processing {
